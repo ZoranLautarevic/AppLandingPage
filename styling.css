@@ -1,0 +1,115 @@
+/*Add a cover background picture for the featured part with a fixed height*/
+.jumbotron {
+    background: url(http://freenaturestock.s3.amazonaws.com/1380.jpg);
+    background-size: 100% 100%;
+    height: 660px;
+}
+
+/*Set the size og the logo*/
+.logo {
+    width: 80px;
+    height: 80px;
+}
+
+/*set text color of featured content*/
+.featured {
+    color: #fff;
+    text-align: center;
+}
+
+/*create space between the title and the logo*/
+.featured h1 {
+    padding-top: 30px;
+}
+
+/*style links*/
+.featured .btn-default {
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(51, 204, 51, 0.5);
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 160px;margin-right: 15px;
+}
+
+.featured .btn-default:hover {
+    background-color: rgb(51, 204, 51);
+}
+
+/*Center align elements in the trial section and add pading*/
+.trial {
+    text-align: center;
+    padding: 20px 0 40px 0;
+    color: black;
+    font-weight: bold;
+}
+
+/*Set size of images and add space between them*/
+.trial img {
+    width: 200px;
+    height: 70px;
+    margin: 20px;
+}
+
+/*style footer*/
+.footer {
+    background-color: #eee;
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+/*Add styling for devices between 480px and 768px*/
+@media (min-width: 480px) and (max-width: 768px) {
+    .jumbotron {
+        height: 410px;
+        margin: 0;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .featured h1 {
+        padding-top: 20px;
+    }
+
+    .featured p {
+        font-size: 17px;
+    }
+
+    .featured {
+        text-align: center;
+    }
+}
+
+/*Add styling for devices under 480px*/
+@media (max-width: 480px) {
+    .jumbotron {
+        height: 410px;
+        margin: 0;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .featured h1 {
+        padding-top: 10px;
+    }
+
+    .featured p, .featured a {
+        font-size: 13px;
+    }
+
+    .featured {
+        text-align: center;
+    }
+
+    .trial img {
+        width: 100px;
+        height: 35px;
+        margin: 10px;
+    }
+}
